@@ -18,7 +18,8 @@ html {
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
-.bgimg-3 {
+.bgimg-3,
+.bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,6 +41,11 @@ html {
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("./img/Ryan_Roga_Emma_Beach.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("./img/MossAway-Website.png");
     min-height: 400px;
 }
 
