@@ -27,19 +27,19 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('/img/Ryan-Roga-Beach-East-Coast.jpg');
+    background-image: url('./img/Ryan-Roga-Beach-East-Coast.jpg');
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("/img/Sea-Weeds-Stock-Dark-Ryan-Roga.jpg");
+    background-image: url("./img/Sea-Weeds-Stock-Dark-Ryan-Roga.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("/img/Ryan_Roga_Emma_Beach.jpg");
+    background-image: url("./img/Ryan_Roga_Emma_Beach.jpg");
     min-height: 400px;
 }
 
