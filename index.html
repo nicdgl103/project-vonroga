@@ -3,18 +3,52 @@
 <title>Ryan Roga | Web Design & Photography</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+<!-- Fonts & Stylesheets -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="styles.css">
 
-<!-- I have access to my own fontawesome account and I'm using that here -->
+<!-- Fontawesome Icons -->
 <script src="https://kit.fontawesome.com/3fe1c2969f.js" crossorigin="anonymous"></script>
 
 <body>
 
+    <!-- Navbar -->
+    <div class="top">
+        <!-- medium to large screen navbar -->
+        <div class="bar hide-small" id="navbar">
+            <a href="#home" class="bar-item button">HOME</a>
+            <a href="about.html" class="bar-item button"><i class="fa fa-user pr3"></i> ABOUT</a>
+            <a href="portfolio.html" class="bar-item button"><i class="fa fa-th pr3"></i> PORTFOLIO</a>
+            <a href="websites.html" class="bar-item button"><i class="fas fa-browser pr3"></i> WEBSITES</a>
+            <a href="contact.html" class="bar-item button"><i class="fa fa-envelope pr3"></i> CONTACT</a>
+        </div>
+
+        <!-- small screen navbar -->
+        <div class="flexbar hide-medium hide-large" id="navbar">
+            <a href="javascript:void(0)" class="bar-item menuIcon hide-medium hide-large" onclick="myFunction(this)"
+                title="Toggle Naviation Menu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+            <div id="tog-this" style="display: none;">
+                <a href="about.html" class="bar-item button"><i class="fa fa-user pr3"></i> ABOUT</a>
+                <a href="portfolio.html" class="bar-item button"><i class="fa fa-th pr3"></i> PORTFOLIO</a>
+                <a href="websites.html" class="bar-item button"><i class="fas fa-browser pr3"></i> WEBSITES</a>
+                <a href="contact.html" class="bar-item button"><i class="fa fa-envelope pr3"></i> CONTACT</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+
+    </div>
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
+    <!-- <div class="w3-top">
+        <!-- <div class="w3-bar" id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
                 <i class="fa fa-bars"></i>
@@ -24,20 +58,17 @@
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
             <a href="#websites" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-browser"></i> WEBSITES</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i>
-            </a>
-        </div>
+        </div> -->
 
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- Navbar on small screens -->
+    <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
             <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
             <a href="#websites" class="w3-bar-item w3-button">WEBSITES</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-        </div>
-    </div>
+        </div> -->
+    </div> -->
 
     <!-- First Parallax Image with Logo Text -->
     <div class="w3-display-container w3-opacity-min bgimg-1" id="home">
@@ -323,32 +354,13 @@
     </footer>
 
     <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Change style of navbar on scroll
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        function myFunction(x) {
+            x.classList.toggle("change");
+            var n = document.getElementById("tog-this");
+            if (n.style.display === "none") {
+                n.style.display = "flex";
             } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        }
-
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+                n.style.display = "none";
             }
         }
     </script>

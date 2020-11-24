@@ -15,62 +15,198 @@ html {
     line-height: 1.8;
 }
 
+/* Navbar */
+.top {
+    position: fixed;
+    width:100%;
+    z-index: 1;
+    top:0;
+    background-color: aliceblue;
+}
+
+.bar{
+    width:100%;
+    overflow:hidden;
+}
+
+.bar .bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0;
+    text-decoration:none;
+}
+
+.flexbar {
+    width:100%;
+    overflow:hidden;
+    display: flex;
+}
+
+.flexbar .bar-item {
+    padding:8px 16px;
+    float:left;
+    border:none;
+    outline:0;
+    text-decoration:none;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+button:hover{
+    color:#000;
+    background-color:#ccc;
+}
+
+a{background-color:transparent}
+a:visited,a:hover{outline-width:0; color:#777}
+
+.pr3 {
+    padding-right: 3px;
+}
+
+/* The Menu Icon */
+.menuIcon {
+    display:inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Toggle Show Items */
+.tog-this {
+    display:none!important;
+}
+
+/* Hide/Show based on screen size */
+@media (max-width:992px) and (min-width:601px){
+    .hide-medium{display:none!important}
+}
+@media (min-width:993px){
+    .modal-content{width:900px}
+    .hide-large{display:none!important}
+    .sidebar.collapse{display:block!important}
+}
+@media (max-width:600px){
+    .modal-content{
+        margin:0 10px;
+        width:auto!important
+    }
+    .modal{padding-top:30px}
+    .dropdown-hover.mobile .dropdown-content,
+    .dropdown-click.mobile .dropdown-content{
+        position:relative
+    }	
+    .hide-small{
+        display:none!important
+    }
+    .mobile{
+        display:block;width:100%!important
+    }
+    .bar-item.mobile,
+    .dropdown-hover.mobile,
+    .dropdown-click.mobile{
+        text-align:center
+    }
+    .dropdown-hover.mobile,
+    .dropdown-hover.mobile .btn,
+    .dropdown-hover.mobile .button,
+    .dropdown-click.mobile,
+    .dropdown-click.mobile .btn,
+    .dropdown-click.mobile .button{
+        width:100%
+    }
+}
+
+
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+/* .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
+/* .bgimg-1 {
     background-image: url('./img/Ryan-Roga-Beach-East-Coast.jpg');
     min-height: 100%;
-}
+} */
 
 /* Second image (Portfolio) */
-.bgimg-2 {
+/* .bgimg-2 {
     background-image: url("./img/Sea-Weeds-Stock-Dark-Ryan-Roga.jpg");
     min-height: 400px;
-}
+} */
 
 /* Third image (Contact) */
-.bgimg-3 {
+/* .bgimg-3 {
     background-image: url("./img/Ryan_Roga_Emma_Beach.jpg");
     min-height: 400px;
-}
+} */
 
-.bgimg-4 {
+/* .bgimg-4 {
     background-image: url("./img/MossAway-Website.png");
     min-height: 400px;
-}
+} */
 
-.w3-wide {
+/* .w3-wide {
     letter-spacing: 10px;
-}
+} */
 
-.w3-hover-opacity {
+/* .w3-hover-opacity {
     cursor: pointer;
-}
+} */
 
 /* Contact Form Section */
-.form {
+/* .form {
     display: flex;
     justify-content: space-around;
     align-items: left;
     flex-direction: column;
     font-family: sans-serif;
-}
+} */
 
-form {
+/* form {
     width: 50%;
     position: relative;
     height: 50px;
     overflow: hidden;
-}
+} */
 
-.form input {
+/* .form input {
     width: 100%;
     height: 100%;
     color: #595f6e;
@@ -78,9 +214,9 @@ form {
     border: none;
     font-size: 16px;
     outline: none;
-}
+} */
 
-.form label {
+/* .form label {
     position: absolute;
     bottom: 0px;
     left: 0%;
@@ -89,9 +225,9 @@ form {
     pointer-events: none;
     border-bottom: 1px solid black;
     font-size: 16px;
-}
+} */
 
-.form label::after {
+/* .form label::after {
     content:"";
     position: absolute;
     left: 0px;
@@ -101,30 +237,30 @@ form {
     border-bottom: 3px solid #5fa8d3;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
-}
+} */
 
-.content-name {
+/* .content-name {
     position: absolute;
     bottom: 5px;
     left: 0px;
     transition: all 0.3s ease;
-}
+} */
 
-.form input:focus + .label-name .content-name,
+/* .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
     transform: translateY(-90%);
     font-size: 14px;
     color: #5fa8d3;
-}
+} */
 
-.form input:focus + .label-name::after,
+/* .form input:focus + .label-name::after,
 .form input:valid + .label-name::after {
     transform: translateX(0%);
-}
+} */
 
 
-/* Turn off parallax scrolling for tablets and phones */
+/* Turn off parallax scrolling for tablets and phones
 @media only screen and (max-device-width: 1600px) {
 
     
-}
+} */
