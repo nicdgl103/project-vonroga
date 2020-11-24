@@ -71,23 +71,13 @@ header a:hover {
 /* Affordable Web Design Blurb */
 section#blurb {
     min-height: 400px;
-    background-image: url("../img/Grain-Stock-1-Ryan-Roga.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("../img/Grain-Stock-1-Ryan-Roga.jpg") no-repeat 0 -300px;
     color: var(--lghtxt);
 }
 
 section#blurb h1 {
-    margin-top: 100px;
+    padding-top: 15%;
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
-}
-
-@media only screen and (max-device-width: 640px) {
-    section#blurb {
-        background-attachment: scroll!important;
-    }
 }
