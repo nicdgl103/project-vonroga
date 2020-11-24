@@ -1,369 +1,85 @@
 <!DOCTYPE html>
-<html>
-<title>Ryan Roga | Web Design & Photography</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-
-<!-- Fonts & Stylesheets -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="styles.css">
-
-<!-- Fontawesome Icons -->
-<script src="https://kit.fontawesome.com/3fe1c2969f.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable, professional web design for your small business.">
+    <meta name="keywords"
+        content="web design, web developer, affordable website, affordable web design, affordable web developer, small business website, website for small business">
+    <meta name="author" content="Ryan Paranich">
+    <title>Roga Web Design | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/3fe1c2969f.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
-
-    <!-- Navbar -->
-    <div class="top">
-        <!-- medium to large screen navbar -->
-        <div class="bar hide-small" id="navbar">
-            <a href="#home" class="bar-item button">HOME</a>
-            <a href="about.html" class="bar-item button"><i class="fa fa-user pr3"></i> ABOUT</a>
-            <a href="portfolio.html" class="bar-item button"><i class="fa fa-th pr3"></i> PORTFOLIO</a>
-            <a href="websites.html" class="bar-item button"><i class="fas fa-browser pr3"></i> WEBSITES</a>
-            <a href="contact.html" class="bar-item button"><i class="fa fa-envelope pr3"></i> CONTACT</a>
-        </div>
-
-        <!-- small screen navbar -->
-        <div class="flexbar hide-medium hide-large" id="navbar">
-            <a href="javascript:void(0)" class="bar-item menuIcon hide-medium hide-large" onclick="myFunction(this)"
-                title="Toggle Naviation Menu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </a>
-            <div id="tog-this" style="display: none;">
-                <a href="about.html" class="bar-item button"><i class="fa fa-user pr3"></i> ABOUT</a>
-                <a href="portfolio.html" class="bar-item button"><i class="fa fa-th pr3"></i> PORTFOLIO</a>
-                <a href="websites.html" class="bar-item button"><i class="fas fa-browser pr3"></i> WEBSITES</a>
-                <a href="contact.html" class="bar-item button"><i class="fa fa-envelope pr3"></i> CONTACT</a>
+    <header>
+        <div class="container">
+            <div id="header-brand">
+                <h1>Roga Web Design</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="top">
-
-    </div>
-    <!-- Navbar (sit on top) -->
-    <!-- <div class="w3-top">
-        <!-- <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="#home" class="w3-bar-item w3-button">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#websites" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-browser"></i> WEBSITES</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-        </div> -->
-
-    <!-- Navbar on small screens -->
-    <!-- <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#websites" class="w3-bar-item w3-button">WEBSITES</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-        </div> -->
-    </div> -->
-
-    <!-- First Parallax Image with Logo Text -->
-    <div class="w3-display-container w3-opacity-min bgimg-1" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">I'M <span
-                    class="w3-hide-small">RYAN</span> ROGA</span>
+    <section id="showcase">
+        <div class="container">
+            <h1>Affordable Professional Web Design</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, nam consectetur odio numquam nulla deserunt
+                facilis consequuntur minus blanditiis ducimus perspiciatis totam iure modi ipsam autem soluta omnis ipsa
+                temporibus.</p>
         </div>
-    </div>
+    </section>
 
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>Web Designer & Photographer</em></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dicta sint mollitia perspiciatis
-            corrupti velit earum, cum dolore, ex, sed at eum dolorum et laboriosam molestias fugit consequuntur
-            necessitatibus facilis!</p>
-        <div class="w3-row">
-            <div class="w3-col m6 w3-center w3-padding-large">
-                <img src="./img/torch-award-2.jpeg" class="w3-round w3-image" alt="Photo of Me" width="500"
-                    height="333">
+    <section id="contact-form">
+        <div class="container contact">
+            <h2>Request A Quote</h2>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+                <button type="submit" class="quote-submit">Request A Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+
+            <div class="box">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+                <p>Fully responsive HTML5 websites.</p>
             </div>
 
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto eligendi, cupiditate iste
-                    fugiat nisi quae, sapiente eius, libero atque sed ducimus facere quam sunt ipsa quas quia tenetur
-                    debitis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nam maiores, culpa
-                    deserunt iusto illum, molestiae, a animi accusamus quidem beatae labore placeat dolore possimus
-                    harum modi porro enim atque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-                    labore doloremque eveniet voluptas velit eaque maiores placeat, omnis sapiente delectus esse
-                    incidunt. Fugiat autem rerum voluptatem maxime accusamus quisquam sit!</p>
+            <div class="box">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CS3</h3>
+                <p>Beautiful CS3 styling.</p>
             </div>
+
+            <div class="box">
+                <i class="far fa-phone-laptop"></i>
+                <h3>Graphic Design</h3>
+                <p>Design thinking for your customer journey.</p>
+            </div>
+
         </div>
-        <!-- maybe something here later -->
-    </div>
+    </section>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">4</span><br>
-            Start-Up Businesses
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">8</span><br>
-            Successful Websites
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">2865+</span><br>
-            Zapier Automations
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">1280+</span><br>
-            Awesome Photos
-        </div>
-    </div>
-
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-        </div>
-    </div>
-
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">MY PHOTOGRAPHY</h3>
-        <p class="w3-center"><em>Here's a handful of my latest photos & edits.<br> Click on an images to make
-                it bigger</em></p><br>
-
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="./img/Co-Photographer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Neko, the reluctant photographer's assistant">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/In-The-Light-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="In The Light">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/Delicious-Sunlight.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Delicious Sunshine - Ryan Roga">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/Abstract-1-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Abstract Background">
-            </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="./img/Fall-Sunset-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/Golden-Atmosphere-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Wooden Bridge Stock Photo B&W">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/Sunset-Hike-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/West-Coast-Waterfall-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="China Beach B&W">
-            </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="./img/Moss-Spores-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/Cat-Eyes-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Wooden Bridge Stock Photo B&W">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/China-Beach-Mist-BW-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-            <div class="w3-col m3">
-                <img src="./img/Portrait-3-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="China Beach B&W">
-            </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="./img/Atmosphere-3-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/BW-Wood-Bridge-Stock-2-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Wooden Bridge Stock Photo B&W">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/Atmosphere-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Atmosphere Music Festival">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="./img/Thorns-And-Ice-Ryan-Roga.jpg" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="China Beach B&W">
-            </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-        </div>
-    </div>
-
-    <!-- Second Parallax Image with Website Text -->
-    <div class="bgimg-4 w3-display-container w3-opacity">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-black w3-wide">WEBSITES</span>
-        </div>
-    </div>
-
-    <!-- Section for Website Showcase -->
-    <div class="w3-content w3-container w3-padding-64" id="websites">
-        <div class="w3-third w3-section w3-container">
-            <h2 class="w3-center">MossAway Roof Moss Removal</h2>
-            <a href="https://www.mossaway.ca/" target="_blank" rel="noopener noreferrer"><img
-                    src="./img/MossAway-Website.png" style="width:100%;" alt="MossAway Roof Moss Removal Website"></a>
-        </div>
-        <div class="w3-third w3-section w3-container">
-            <h2 class="w3-center">Comox Window Cleaning</h2>
-            <a href="https://www.comoxwindowcleaning.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="./img/Comox-Window-Cleaning.png" style="width:100%;"
-                    alt="MossAway Roof Moss Removal Website"></a>
-        </div>
-        <div class="w3-third w3-section w3-container">
-            <h2 class="w3-center">Worldboss Entertainment</h2>
-            <a href="https://www.mossaway.ca/" target="_blank" rel="noopener noreferrer"><img
-                    src="./img/MossAway-Website.png" style="width:100%;" alt="MossAway Roof Moss Removal Website"></a>
-        </div>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
-        </div>
-    </div>
-
-    <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-        </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">LET'S WORK TOGETHER</h3>
-        <p class="w3-center"><em>Here's how to get in touch...</em></p>
-
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
-                <img src="/img/map.jpg" class="w3-image w3-round" style="width:100%">
-            </div>
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-large w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Courtenay,
-                    British Columbia, Canada<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone:
-                    250-250-2500<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                    ryanroga@gmail.com<br>
-                </div>
-                <p>Or leave me a note:</p>
-
-                <div class="form">
-                    <form action="">
-                        <div>
-                            <input type="text" name="name" id="name" autocomplete="name" required>
-                            <label for="name" class="label-name">
-                                <span class="content-name">
-                                    Full Name
-                                </span>
-                            </label>
-                        </div>
-
-                        <!-- <div>
-                        <input type="email" name="email" id="email" autocomplete="email" required>
-                        <label for="email" class="label-name">
-                            <span>
-                                Email Address
-                            </span>
-                        </label>
-                    </div>
-
-                    <div>
-                        <input type="phone" name="phone" id="phone" autocomplete="tel" required>
-                        <label for="phone" class="label-name">
-                            <span>
-                                Phone Number
-                            </span>
-                        </label>
-                    </div> -->
-                    </form>
-                </div>
-
-                <!-- Old Form...
-
-                    <form action="/action_page.php" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                </form> -->
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p> -->
+    <footer>
+        <p>Roga Web Design &copy; 2020</p>
     </footer>
-
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-            var n = document.getElementById("tog-this");
-            if (n.style.display === "none") {
-                n.style.display = "flex";
-            } else {
-                n.style.display = "none";
-            }
-        }
-    </script>
 
 </body>
 
