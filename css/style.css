@@ -150,3 +150,13 @@ section#skills .skill {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Footer Style */
+
+footer {
+    padding:20px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: var(--nba);
+    color: var(--lghtxt);
+}
