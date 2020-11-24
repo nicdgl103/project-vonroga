@@ -1,7 +1,7 @@
 :root {
     --bg1:#f6f6f6;
-    --bg2: #333f47;
-    --nba: #df751f;
+    --bg2: hsl(204, 16%, 24%);
+    --nba: #ee3333;
     --hov: rgb(105, 138, 230);
     --lghtxt: #fff;
 }
@@ -91,13 +91,13 @@ section#contact-form {
     height: 125px;
 }
 
-section#contact-form>h1 {
-    float: left;
-    width: auto;
+section#contact-form>h2 {
+    
+    
 }
 
 #contact-form form {
-    float: left;
+    
 }
 
 form input {
@@ -131,6 +131,9 @@ form label {
 /* Skills Section */
 section#skills {
     margin-top: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section#skills div.flex-row {
@@ -140,5 +143,10 @@ section#skills div.flex-row {
 }
 
 section#skills .skill {
-    margin: 20px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
