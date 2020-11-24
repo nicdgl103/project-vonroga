@@ -24,6 +24,14 @@ ul {
     padding: 0;
 }
 
+.dark {
+    padding:15px;
+    background-color: var(--bg2);
+    color: var(--lghtxt);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Header Styles */
 header {
     background:var(--bg2);
@@ -92,12 +100,11 @@ section#contact-form {
 }
 
 section#contact-form>h2 {
-    
-    
+    /* placeholding */
 }
 
 #contact-form form {
-    
+    /* palceholding */
 }
 
 form input {
@@ -151,12 +158,32 @@ section#skills .skill {
     margin-right: auto;
 }
 
-/* Footer Style */
 
+
+/* About Page Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* About Page Text Column */
+article#about-col {
+    float: left;
+    width: 65%;
+}
+
+
+
+
+/* Footer Style */
 footer {
     padding:20px;
     margin-top: 25px;
     text-align: center;
     background-color: var(--nba);
     color: var(--lghtxt);
+    clear: both;
 }
+
+
