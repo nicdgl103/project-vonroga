@@ -126,7 +126,7 @@ form label {
     padding: 8px;
 }
 
-.btn1 {
+.submit-button {
     height: 38px;
     background: var(--nba);
     border: none;
@@ -168,12 +168,23 @@ aside#sidebar {
     margin-top: 10px;
 }
 
+
 /* About Page Text Column */
-article#about-col {
+article#text-col {
     float: left;
     width: 65%;
 }
 
+/* come back to ... maybe go class not id */
+.text-col {
+    float: left;
+    width: 65%;
+}
+.sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
 
 
 
