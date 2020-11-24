@@ -1,7 +1,9 @@
 :root {
     --bg1:#f4f4f4;
     --bg2: #35424a;
-    --nba: #e8491d
+    --nba: #e8491d;
+    --hov: rgb(105, 138, 230);
+    --lghtxt: #fff;
 }
 
 body {
@@ -48,6 +50,7 @@ header #header-brand {
 }
 
 header #header-brand h1 {
+    vertical-align: middle;
     margin: 0;
 }
 
@@ -59,4 +62,32 @@ header nav {
 header .feature,
 header .active a {
     color: var(--nba);
+}
+
+header a:hover {
+    color: var(--hov);
+}
+
+/* Affordable Web Design Blurb */
+section#blurb {
+    min-height: 400px;
+    background-image: url("../img/Grain-Stock-1-Ryan-Roga.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--lghtxt);
+}
+
+section#blurb h1 {
+    margin-top: 100px;
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 640px) {
+    section#blurb {
+        background-attachment: scroll!important;
+    }
 }
