@@ -83,21 +83,21 @@ section#blurb h1 {
     text-align: center;
 }
 
-#contact-form {
+/* Contact Form Section */
+section#contact-form {
     padding:15px;
     color: var(--lghtxt);
     background: var(--bg2);
     height: 125px;
 }
 
-#contact-form h1 {
-
-    text-align: center;
+section#contact-form>h1 {
+    float: left;
+    width: auto;
 }
 
 #contact-form form {
-    
-    margin-top: 15px;
+    float: left;
 }
 
 form input {
@@ -107,9 +107,6 @@ form input {
 
 form input[type="text"]{
     width:125px;
-}
-form input[type="email"]{
-    width:140px;
 }
 
 form input[type="tel"]{
@@ -126,29 +123,22 @@ form label {
     height: 38px;
     background: var(--nba);
     border: none;
-    padding: 0 20px;
+    padding: 0 25px;
+    margin-left: 50px;
     color: var(--lghtxt);
 }
 
-/* Skills */
-#skills {
+/* Skills Section */
+section#skills {
     margin-top: 25px;
-    display:flex;
+}
+
+section#skills div.flex-row {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#skills .skill {
-    width: 22%;
-    padding: 10px;
-    text-align: center;
-    background-color: lightgrey;
-}
-
-#skills .skill i{
-    width: 90px;
-}
-
-#skills h1 {
-    text-align: center;
+section#skills .skill {
+    margin: 20px;
 }
