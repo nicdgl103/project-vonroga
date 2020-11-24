@@ -147,6 +147,7 @@ section#skills div.flex-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 15px;
 }
 
 section#skills .skill {
