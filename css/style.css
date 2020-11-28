@@ -153,6 +153,11 @@ section#skills {
     margin-right: auto;
 }
 
+section#skills h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
 section#skills div.flex-row {
     display: flex;
     flex-direction: row;
