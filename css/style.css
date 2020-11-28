@@ -36,8 +36,8 @@ ul {
 header {
     background:var(--bg2);
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
+    padding-top: 20px;
+    min-height: 60px;
     border-bottom: var(--nba) 3px solid ;
 }
 header a {
