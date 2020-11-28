@@ -1,7 +1,7 @@
 :root {
     --bg1:#f6f6f6;
     --bg2: hsl(204, 16%, 24%);
-    --nba: #ee3333;
+    --nba: #4CBB17;
     --hov: rgb(105, 138, 230);
     --lghtxt: #fff;
 }
@@ -77,10 +77,20 @@ header a:hover {
     color: var(--hov);
 }
 
+/* Icon styles */
+.fa-7x {
+    color: var(--nba);
+}
+
 /* Affordable Web Design Blurb */
 section#blurb {
     min-height: 400px;
-    background: url("../img/Grain-Stock-1-Ryan-Roga.jpg") no-repeat 0 -300px;
+    /* Image Source: https://www.pexels.com/photo/computer-desk-hand-laptop-374631/ */
+    background-image: url("../img/pexels-burst-374631.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: var(--lghtxt);
 }
 
