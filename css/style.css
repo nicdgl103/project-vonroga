@@ -236,13 +236,57 @@ footer a {
 }
 
 /* Responsive screen size styles */
+/* tablet sizes */
 @media(max-width: 768px){
-    /* Tablet Styles */
-    header#header-brand{
+    /* Header Styles */
+    header#header-brand,
+    header nav,
+    header nav li{
         float: none;
+        text-align: center;
+        width: 100%;
     }
+
+    #header-brand h1 {
+        padding-top: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    /* intro blurb styles */
+    section#blurb {
+        min-height: 325px;
+        background-position: center;
+        background-position-y: -70px;
+    }
+
+    section#blurb h1{
+        font-size: 30px;
+    }
+
+    section#blurb p{
+        font-size: 16px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Request Quote Sections */
+    section#contact-form .container {
+        display: block;
+    }
+
+    section#contact-form .submit-button {
+        width: 100%;
+    }
+
 }
 
-@media only screen and (max-width: 690px){
+@media(max-width: 400px){
     /* small phones? */
+    
 }
