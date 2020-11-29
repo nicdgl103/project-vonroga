@@ -201,7 +201,24 @@ article#text-col {
     margin-top: 10px;
 }
 
+/* Services Styles */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: var(--nba) solid 2px;
+    margin-bottom: 5px;
+    background: var(--bg2);
+    color: var(--lghtxt);
+}
 
+aside#rfp .quote input{
+    width: 90%;
+}
+
+aside#rfp .quote textarea {
+    width: 94%;
+    height: 50px;
+}
 
 /* Footer Style */
 footer {
@@ -218,4 +235,14 @@ footer a {
     color: var(--bg2);
 }
 
+/* Responsive screen size styles */
+@media(max-width: 768px){
+    /* Tablet Styles */
+    header#header-brand{
+        float: none;
+    }
+}
 
+@media only screen and (max-width: 690px){
+    /* small phones? */
+}
