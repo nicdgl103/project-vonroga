@@ -59,6 +59,7 @@ header #header-brand {
 header #header-brand h1 {
     vertical-align: middle;
     margin: 0;
+    cursor: default;
 }
 
 header nav {
