@@ -81,6 +81,25 @@ header a:hover {
     color: var(--nba);
 }
 
+/* Front Page Contact Form Styles */
+section#contact-us {
+    background-image: url("../bkg/roga-black-slach-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.front-contact-form {
+    color: var(--lghtxt);
+    margin-top: 45px;
+    margin-right: 45px;
+}
+
+form.front-form {
+    width: 100%;
+    height: 500px;
+}
+
 /* Affordable Web Design Blurb */
 section#blurb {
     min-height: 400px;
