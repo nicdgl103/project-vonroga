@@ -2,6 +2,7 @@
     --bg1:#f6f6f6;
     --bg2: hsl(204, 16%, 24%);
     --nba: #4CBB17;
+    --nbafocus:  #EB54E4;
     --hov: rgb(105, 138, 230);
     --lghtxt: #fff;
 }
@@ -109,33 +110,6 @@ section#contact-form {
     height: 125px;
 }
 
-section#contact-form>h2 {
-    /* placeholding */
-}
-
-#contact-form form {
-    /* palceholding */
-}
-
-form input {
-    padding: 4px 7px;
-    height: 20px;
-}
-
-form input[type="text"]{
-    width:125px;
-}
-
-form input[type="tel"]{
-    width: 85px;
-}
-
-form label {
-    font-size: 20px;
-    vertical-align: middle;
-    padding: 8px;
-}
-
 .submit-button {
     height: 38px;
     background: var(--nba);
@@ -143,6 +117,48 @@ form label {
     padding: 0 25px;
     margin-left: 50px;
     color: var(--lghtxt);
+}
+
+.services-input {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--lghtxt);
+    font-weight:500;
+    font-size:18px;
+    border-radius: 3px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid var(--nba);
+    padding: 13px;
+    margin-bottom: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.services-input:focus{
+    border: 2px solid var(--nbafocus);
+}
+
+textarea.services-input {
+    height: 150px;
+    width: 100%;
+    line-height: 150%;
+    resize: vertical;
+}
+/* TODO - textarea still is just a few px larger than name/address - unclear why */
+
+[type="submit"].services-submit {
+    width:100%;
+    background: var(--nba);
+    border-radius: 5px;
+    border:0;
+    cursor:pointer;
+    color: var(--lghtxt);
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: -4px;
+    font-weight: 700;
 }
 
 /* Skills Section */
