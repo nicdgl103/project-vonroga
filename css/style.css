@@ -4,7 +4,7 @@
     --nba: #4CBB17;
     --nbafocus:  #EB54E4;
     --hov: rgb(105, 138, 230);
-    --lghtxt: #fff;
+    --lghtxt: rgb(251, 251, 251);
 }
 
 body {
@@ -82,42 +82,33 @@ header a:hover {
     color: var(--nba);
 }
 
-/* Front Page Contact Form Styles */
-section#contact-us {
-    background-image: url("../bkg/roga-black-slach-bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.front-contact-form {
-    color: var(--lghtxt);
-    margin-top: 45px;
-    margin-right: 45px;
-}
-
-form.front-form {
-    width: 100%;
-    height: 500px;
-}
 
 /* Affordable Web Design Blurb */
 section#blurb {
-    min-height: 400px;
+    min-height: 460px;
     /* Image Source: https://www.pexels.com/photo/computer-desk-hand-laptop-374631/ */
-    background-image: url("../img/pexels-burst-374631.jpg");
+    background-image: url("../bkg/pexels-junior-teixeira-2047905.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-position-y: -460px;
     background-size: cover;
     color: var(--lghtxt);
+
 }
 
 section#blurb h1 {
-    padding-top: 15%;
+    padding-top: 10%;
     font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
+}
+
+br.mobile-only {
+    display: none;
+}
+
+section#blurb p {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 /* Contact Form Section */
@@ -290,17 +281,25 @@ footer a {
 
     /* intro blurb styles */
     section#blurb {
-        min-height: 325px;
+        min-height: 450px;
         background-position: center;
-        background-position-y: -70px;
+        background-position-x: center;
+        background-position-y: 50px;
+        background-attachment: fixed;
+    }
+
+    br.mobile-only {
+        display: block;
     }
 
     section#blurb h1{
         font-size: 30px;
+        padding-top: 60px;
     }
 
-    section#blurb p{
+   p#blurb-text{
         font-size: 16px;
+        text-align: center;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
