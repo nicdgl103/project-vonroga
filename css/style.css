@@ -412,6 +412,25 @@ footer a {
         margin-right: auto;
     }
 
+    div.sidebar {
+        float: none;
+        width: 90%;
+        margin: 25px auto;
+    }
+    h2#services-header {
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+
+    article.text-col {
+        float: none;
+        margin: 25px auto;
+        width: 90%;
+    }
+
 }
 
 @media(max-width: 400px){
