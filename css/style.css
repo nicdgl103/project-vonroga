@@ -331,6 +331,20 @@ footer a {
     color: var(--bg2);
 }
 
+/* Work Page Styling */
+section#work-main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px #666;
+    margin-top: 25px;
+    padding: 10px 35px 30px 35px;
+}
+
+section#work-main ul li {
+    list-style: none;
+}
+
 /* Responsive screen size styles */
 /* tablet sizes */
 @media(max-width: 768px){
@@ -344,7 +358,7 @@ footer a {
     }
 
     #header-brand h1 {
-        padding-top: 20px;
+        padding-top: 29px;
     }
 
     header nav ul {
