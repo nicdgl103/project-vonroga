@@ -170,14 +170,16 @@ button.action-btn {
     border: none;
     color: var(--lghtxt);
     padding: 14px 40px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 1.1rem;
     border-radius: 5px;
     transition: all 0.3s;
-    margin-top: 25px;
-    margin-bottom: 28px;
+    margin: 25px auto 28px auto;
+    display: block;
+}
+
+a.abtn {
+    text-decoration: none;
 }
 
 button.action-btn:hover {
@@ -425,7 +427,9 @@ footer a {
         font-weight: 800;
     }
 
-    article.text-col {
+    article.text-col,
+    article#text-col,
+    aside#sidebar {
         float: none;
         margin: 25px auto;
         width: 90%;

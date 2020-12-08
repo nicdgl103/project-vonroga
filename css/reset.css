@@ -5,6 +5,10 @@ h1 {
     padding: .35em 0 .35em 0;
 }
 
+button {
+    margin: 0;
+}
+
 
 /*
 html5doctor.com Reset Stylesheet
