@@ -56,7 +56,7 @@ header #header-brand {
     float: left;
 }
 
-header #header-brand h1 {
+header #header-brand h2 {
     vertical-align: middle;
     margin: 0;
     cursor: default;
@@ -92,7 +92,6 @@ section#blurb {
     background-position-y: -460px;
     background-size: cover;
     color: var(--lghtxt);
-
 }
 
 section#blurb h1 {
@@ -346,7 +345,6 @@ section#work-main ul li {
 }
 
 /* Responsive screen size styles */
-/* tablet sizes */
 @media(max-width: 768px){
     /* Header Styles */
     header#header-brand,
@@ -433,6 +431,7 @@ section#work-main ul li {
         width: 90%;
         margin: 25px auto;
     }
+
     h2#services-header {
         text-align: center;
         margin-top: 35px;
@@ -449,9 +448,4 @@ section#work-main ul li {
         width: 90%;
     }
 
-}
-
-@media(max-width: 400px){
-    /* small phones? */
-    
 }
